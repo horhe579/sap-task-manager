@@ -53,6 +53,7 @@ public class Main {
                         gosho,
                         newTaskMessage));
             }
+            notificationThread.join();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
